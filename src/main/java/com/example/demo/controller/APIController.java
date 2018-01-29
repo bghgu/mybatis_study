@@ -19,6 +19,8 @@ public class APIController {
 	@Autowired
 	TestService testService;
 
+	TestService t1 = new TestService();
+	
 	@GetMapping(value = "test")
 	public String test() {
 		return "hello World";

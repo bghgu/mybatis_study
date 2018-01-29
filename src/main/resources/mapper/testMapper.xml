@@ -13,7 +13,18 @@
     <select id = "findByName" parameterType = "String" resultType = "com.example.demo.dto.User">
     	SELECT *
     	FROM USER
-    	WHERE name = #{name}
+    	WHERE id = #{id}
     </select>
-    	
+    
+    <select id = "login" resultType = "com.example.demo.dto.User">
+    	SELECT *
+    	FROM USER
+    	WHERE id = #{id} 
+    	AND password = #{password}
+    </select>
+    
+    <insert id = "signUp" parameterType = "com.example.demo.dto.User" keyProperty = "id">
+    	INSERT INTO USER
+    	VALUES(#{id}, #{name}, #{password})
+    </insert>
 </mapper>

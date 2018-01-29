@@ -23,4 +23,14 @@ public class TestService {
 		return testmapper.findByName(name);
 	}
 	
+	public User login(String id, String password) {
+		User user = testmapper.login(id, password);
+		if(user == null) return null;
+		else return user;
+	}
+	
+	public void signUp(User user) {
+		testmapper.signUp(user);
+	}
+	
 }
