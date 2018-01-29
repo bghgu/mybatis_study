@@ -11,4 +11,10 @@
 - `mybatis` 연동 `select`
 - `service`, `dto` `mapper` 생성
 
+#### 2주차
+
+- `Controller`, `JSP` 맵핑
+- `SignUp` `insert`
+- `Login`, `SpringSecurity`설정
+
 ---
